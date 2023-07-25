@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div class="category-container">
+            <label>
+                <input type="radio" name="category-selector" class="category" value="love" />Love
+            </label>
+            <label>
+                <input type="radio" name="category-selector" class="category" value="inspirational" />Inspirational
+            </label>
+            <label>
+                <input type="radio" name="category-selector" class="category " value="life" />Life
+            </label>
+            <label>
+                <input type="radio" name="category-selector" class="category " value="funny" />Funny
+            </label>
+            <label>
+                <input type="radio" name="category-selector" class="category" value="dating" />Dating
+            </label>
+            <label>
+                <input type="radio" name="category-selector" class="category" value=" " />Random
+            </label>
+        </div>
+
+        <h1 id="heading">Random Quote Generator</h1>
+        <h2 class="quote" id="quote">
+            <span id="quote">Select a category and press the button to get a quote.</span>
+        </h2>
+        <p id="author" class="author"></p>
+        <button class="btn" id="btn">Get Quote</button>
+    </div>
+    <small>Made with love ~ Indira Fraga <i class="fa-solid fa-heart" style="color: #d91212;"></i></small>
+    <script src="index.js"></script>
+</body>
+
+</html>
