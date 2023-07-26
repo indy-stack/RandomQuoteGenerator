@@ -4,7 +4,7 @@
 }
 
 body {
-     margin: 0;
+    margin: 0;
     height: 100vh;
     background: linear-gradient(65deg, lightpink, lightblue);
     display: flex;
@@ -48,8 +48,9 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .category-container label {
-    background:rgb(226, 182, 182);
+    background: rgb(226, 182, 182);
     box-shadow: 0 6px 10px var(--shadow-color);
     border-radius: 15px;
     margin: 5px 10px;
@@ -59,11 +60,17 @@ body {
 .category-container label:hover {
     transform: scale(1.1);
 }
-.category-container label:hover
-{
-    background:rgb(184, 98, 98);
+
+.category-container label:hover,
+.category-container label.active {
+    background: rgb(184, 98, 98);
     cursor: pointer;
 }
+
+input {
+    display: none;
+}
+
 .category-container label:active {
     transform: scale(0.98);
 }
@@ -81,7 +88,7 @@ body {
 }
 
 .btn:hover {
-    background: linear-gradient(to right,lightblue, lightpink);
+    background: linear-gradient(to right, lightblue, lightpink);
     box-shadow: 0 4px 4px rgba(0, 0, 0, .2);
     transition: all 0.3s ease-in-out;
 }
